@@ -83,9 +83,9 @@ const PostPage: React.FC = () => {
 							Add comment
 						</Button>
 					</Box>
-					{currentPost?.comments && (
-						<CurrentPostComments comments={currentPost.comments} />
-					)}
+					{/*{currentPost?.comments && (*/}
+					<CurrentPostComments comments={currentPost?.comments || []} />
+					{/*)}*/}
 				</Box>
 			</Box>
 			<AddCommentModal />
